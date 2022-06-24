@@ -1,0 +1,17 @@
+D:\学习资料\WebApplicationRBACTwo\Repository\bin\Debug\net5.0\Repository.deps.json
+D:\学习资料\WebApplicationRBACTwo\Repository\bin\Debug\net5.0\Repository.dll
+D:\学习资料\WebApplicationRBACTwo\Repository\bin\Debug\net5.0\Repository.pdb
+D:\学习资料\WebApplicationRBACTwo\Repository\bin\Debug\net5.0\ClassLibraryEntityFrameWork.dll
+D:\学习资料\WebApplicationRBACTwo\Repository\bin\Debug\net5.0\ClassLibraryEntityFrameWork.pdb
+D:\学习资料\WebApplicationRBACTwo\Repository\obj\Debug\net5.0\Repository.csproj.AssemblyReference.cache
+D:\学习资料\WebApplicationRBACTwo\Repository\obj\Debug\net5.0\Repository.GeneratedMSBuildEditorConfig.editorconfig
+D:\学习资料\WebApplicationRBACTwo\Repository\obj\Debug\net5.0\Repository.AssemblyInfoInputs.cache
+D:\学习资料\WebApplicationRBACTwo\Repository\obj\Debug\net5.0\Repository.AssemblyInfo.cs
+D:\学习资料\WebApplicationRBACTwo\Repository\obj\Debug\net5.0\Repository.csproj.CoreCompileInputs.cache
+D:\学习资料\WebApplicationRBACTwo\Repository\obj\Debug\net5.0\Repository.csproj.CopyComplete
+D:\学习资料\WebApplicationRBACTwo\Repository\obj\Debug\net5.0\Repository.dll
+D:\学习资料\WebApplicationRBACTwo\Repository\obj\Debug\net5.0\refint\Repository.dll
+D:\学习资料\WebApplicationRBACTwo\Repository\obj\Debug\net5.0\Repository.pdb
+D:\学习资料\WebApplicationRBACTwo\Repository\obj\Debug\net5.0\ref\Repository.dll
+D:\学习资料\WebApplicationRBACTwo\Repository\bin\Debug\net5.0\ClassLibraryDto.dll
+D:\学习资料\WebApplicationRBACTwo\Repository\bin\Debug\net5.0\ClassLibraryDto.pdb

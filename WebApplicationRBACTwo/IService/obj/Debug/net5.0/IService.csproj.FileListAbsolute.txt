@@ -1,0 +1,15 @@
+D:\学习资料\WebApplicationRBAC\IService\bin\Debug\net5.0\IService.deps.json
+D:\学习资料\WebApplicationRBAC\IService\bin\Debug\net5.0\IService.dll
+D:\学习资料\WebApplicationRBAC\IService\bin\Debug\net5.0\IService.pdb
+D:\学习资料\WebApplicationRBAC\IService\bin\Debug\net5.0\ClassLibraryEntityFrameWork.dll
+D:\学习资料\WebApplicationRBAC\IService\bin\Debug\net5.0\ClassLibraryEntityFrameWork.pdb
+D:\学习资料\WebApplicationRBAC\IService\obj\Debug\net5.0\IService.csproj.AssemblyReference.cache
+D:\学习资料\WebApplicationRBAC\IService\obj\Debug\net5.0\IService.GeneratedMSBuildEditorConfig.editorconfig
+D:\学习资料\WebApplicationRBAC\IService\obj\Debug\net5.0\IService.AssemblyInfoInputs.cache
+D:\学习资料\WebApplicationRBAC\IService\obj\Debug\net5.0\IService.AssemblyInfo.cs
+D:\学习资料\WebApplicationRBAC\IService\obj\Debug\net5.0\IService.csproj.CoreCompileInputs.cache
+D:\学习资料\WebApplicationRBAC\IService\obj\Debug\net5.0\IService.csproj.CopyComplete
+D:\学习资料\WebApplicationRBAC\IService\obj\Debug\net5.0\IService.dll
+D:\学习资料\WebApplicationRBAC\IService\obj\Debug\net5.0\refint\IService.dll
+D:\学习资料\WebApplicationRBAC\IService\obj\Debug\net5.0\IService.pdb
+D:\学习资料\WebApplicationRBAC\IService\obj\Debug\net5.0\ref\IService.dll

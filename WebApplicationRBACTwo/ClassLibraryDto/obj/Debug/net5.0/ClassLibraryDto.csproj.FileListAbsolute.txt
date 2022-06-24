@@ -1,0 +1,12 @@
+D:\学习资料\WebApplicationRBACTwo\ClassLibraryDto\bin\Debug\net5.0\ClassLibraryDto.deps.json
+D:\学习资料\WebApplicationRBACTwo\ClassLibraryDto\bin\Debug\net5.0\ClassLibraryDto.dll
+D:\学习资料\WebApplicationRBACTwo\ClassLibraryDto\bin\Debug\net5.0\ClassLibraryDto.pdb
+D:\学习资料\WebApplicationRBACTwo\ClassLibraryDto\obj\Debug\net5.0\ClassLibraryDto.csproj.AssemblyReference.cache
+D:\学习资料\WebApplicationRBACTwo\ClassLibraryDto\obj\Debug\net5.0\ClassLibraryDto.GeneratedMSBuildEditorConfig.editorconfig
+D:\学习资料\WebApplicationRBACTwo\ClassLibraryDto\obj\Debug\net5.0\ClassLibraryDto.AssemblyInfoInputs.cache
+D:\学习资料\WebApplicationRBACTwo\ClassLibraryDto\obj\Debug\net5.0\ClassLibraryDto.AssemblyInfo.cs
+D:\学习资料\WebApplicationRBACTwo\ClassLibraryDto\obj\Debug\net5.0\ClassLibraryDto.csproj.CoreCompileInputs.cache
+D:\学习资料\WebApplicationRBACTwo\ClassLibraryDto\obj\Debug\net5.0\ClassLibraryDto.dll
+D:\学习资料\WebApplicationRBACTwo\ClassLibraryDto\obj\Debug\net5.0\refint\ClassLibraryDto.dll
+D:\学习资料\WebApplicationRBACTwo\ClassLibraryDto\obj\Debug\net5.0\ClassLibraryDto.pdb
+D:\学习资料\WebApplicationRBACTwo\ClassLibraryDto\obj\Debug\net5.0\ref\ClassLibraryDto.dll
