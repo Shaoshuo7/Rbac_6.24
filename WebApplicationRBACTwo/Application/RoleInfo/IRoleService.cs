@@ -10,8 +10,8 @@ namespace Application
 {
     public interface IRoleService : IBaseService<Role,RoleDto>
     {
-        int Add(RoleDto c);
+        int Adds(RoleDto c);
 
-        int Upd(RoleDto c);
+        int Upds(RoleDto c);
     }
 }

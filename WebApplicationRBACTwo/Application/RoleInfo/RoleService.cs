@@ -20,7 +20,7 @@ namespace Application
             this.roleRepository = roleRepository;
         }
 
-        public int Add(RoleDto c)
+        public int Adds(RoleDto c)
         {
             return roleRepository.Add(new Role
             {
@@ -31,7 +31,7 @@ namespace Application
             });
         }
 
-        public int Upd(RoleDto c)
+        public int Upds(RoleDto c)
         {
             return roleRepository.Upd(new Role
             {

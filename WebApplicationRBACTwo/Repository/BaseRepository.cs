@@ -19,17 +19,17 @@ namespace Repository
 
         protected MyDbContext db;
 
-        public List<T> MeunAll()
+        public virtual List<T> MeunAll()
         {
             return db.Set<T>().ToList();
         }
 
-        public List<T> Cascading()
+        public virtual List<T> Cascading()
         {
             return db.Set<T>().ToList();
         }
 
-        public int Del(TKey id)
+        public virtual int Del(TKey id)
         {
             var list = db.Set<T>().Find(id);
 
@@ -38,21 +38,26 @@ namespace Repository
             return db.SaveChanges();
         }
 
-        public int Add(T c)
+        public virtual int Add(T c)
         {
             db.Set<T>().Add(c);
 
             return db.SaveChanges();
         }
 
-        public T FanT(TKey id)
+        public virtual T FanT(TKey id)
         {
             var list = db.Set<T>().Find(id);
 
             return list;
         }
 
-        public int Upd(T c)
+        public virtual T FanT(Expression<Func<T, bool>> predicate)
+        {
+            return db.Set<T>().Where(predicate).FirstOrDefault();
+        }
+
+        public virtual int Upd(T c)
         {
             db.Entry<T>(c).State = Microsoft.EntityFrameworkCore.EntityState.Modified;
 

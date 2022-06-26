@@ -23,7 +23,7 @@
     },
     methods: {
       onSubmit() {
-        this.$http.post("https://localhost:44356/api/RoleInfo/Add",this.form).then(res=>{
+        this.$http.post("https://localhost:44356/api/RoleInfo/Adds",this.form).then(res=>{
             if(res.data > 0){
                 this.$message({
                     message: '添加成功',

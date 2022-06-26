@@ -30,7 +30,7 @@
             })
         },
       onSubmit() {
-        this.$http.post("https://localhost:44356/api/RoleInfo/Upd",this.form).then(res=>{
+        this.$http.post("https://localhost:44356/api/RoleInfo/Upds",this.form).then(res=>{
             if(res.data > 0){
                 this.$message({
                     message: '添加成功',

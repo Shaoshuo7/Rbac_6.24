@@ -1,4 +1,6 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
+using System.Linq.Expressions;
 
 namespace Repository
 {
@@ -10,6 +12,7 @@ namespace Repository
         List<T> Cascading();
         int Del(TKey id);
         T FanT(TKey id);
+        T FanT(Expression<Func<T, bool>> predicate);
         List<T> MeunAll();
         int Upd(T c);
     }

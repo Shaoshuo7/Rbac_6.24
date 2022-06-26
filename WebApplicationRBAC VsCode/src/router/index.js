@@ -22,6 +22,9 @@ const routes = [
     path: '/MeunShow',
     name: 'MeunShow',
     component: () => import('../views/MeunShow.vue')
+    // meta:{
+    //   Login:true
+    // }
   },
   {
     path: '/MeunAdd',
@@ -47,11 +50,30 @@ const routes = [
     path: '/RoleUpd',
     name: 'RoleUpd',
     component: () => import('../views/RoleUpd.vue')
+  },
+  {
+    path: '/Login',
+    name: '登录',
+    component: () => import('../views/Login.vue')
+  },
+  {
+    path: '/Enroll',
+    name: 'Enroll',
+    component: () => import('../views/Enroll.vue')
   }
 ]
 
 const router = new VueRouter({
   routes
+})
+router.beforeEach((t,f,n)=>{
+  let LogName = sessionStorage.getItem("LogName")??""
+  if(t.name !== '登录' && LogName==0){
+    n({name:'登录'})
+  }
+  else{
+    n()
+  }
 })
 
 export default router

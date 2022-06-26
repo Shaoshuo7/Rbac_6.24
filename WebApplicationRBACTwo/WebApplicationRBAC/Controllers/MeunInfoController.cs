@@ -1,6 +1,7 @@
 ﻿using Application;
 using ClassLibraryDto;
 using ClassLibraryEntityFrameWork;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using System.Collections.Generic;
@@ -9,6 +10,7 @@ namespace WebApplicationRBAC.Controllers
 {
     [Route("api/[controller]/[action]")]
     [ApiController]
+    [Authorize]
     public class MeunInfoController : ControllerBase
     {
         private readonly IMeunService meunService;
