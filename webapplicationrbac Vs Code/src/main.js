@@ -5,8 +5,10 @@ import store from './store'
 import ElementUI from 'element-ui';
 import 'element-ui/lib/theme-chalk/index.css';
 import axios from 'axios'
+import './Style.css';
 
 Vue.prototype.$http = axios
+axios.defaults.headers.common['Authorization'] = `bearer ${localStorage.getItem('token')}`;
 
 Vue.use(ElementUI);
 

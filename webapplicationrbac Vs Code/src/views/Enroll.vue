@@ -99,7 +99,7 @@
       },
       Cancel(){
         this.$message('已经取消注册');
-        this.$router.push("/Login")
+        this.$emit("OnEnroll",true)
       }
     }
   }

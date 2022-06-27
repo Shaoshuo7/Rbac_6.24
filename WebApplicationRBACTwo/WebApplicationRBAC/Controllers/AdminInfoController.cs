@@ -2,6 +2,7 @@
 using ClassLibraryDto;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using System;
 using System.Collections.Generic;
 
 namespace WebApplicationRBAC.Controllers
@@ -51,6 +52,15 @@ namespace WebApplicationRBAC.Controllers
         public List<AdminDto> GetShow()
         {
             return adminService.GetShow();
+        }
+
+        [HttpGet]
+        public int VerificationInfo()
+        {
+            Random ranom = new Random();
+            int Verific = ranom.Next(1000, 9999);
+
+            return Verific;
         }
     }
 }

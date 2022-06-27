@@ -7,10 +7,12 @@
             <el-form-item label="菜单链接">
                 <el-input v-model="from.MeunLink"></el-input>
             </el-form-item>
+            <el-form-item label="父级ID">
                 <el-cascader
-                v-model="value"
+                v-model="from.MeId"
                 :options="options"
                 :props="{ checkStrictly: true }"
+                ref="GetMeId"
                 clearable></el-cascader>
 
                 <!-- <el-cascader
@@ -18,7 +20,9 @@
                   :options="options"
                   @change="handleChange"></el-cascader> -->
             <el-form-item>
-                <el-button type="primary" @click="onSubmit">添加</el-button>
+            </el-form-item>
+                
+                <el-button type="primary" @click="onSubmit">修改</el-button>
             </el-form-item>
         </el-form>
     </div>
@@ -31,6 +35,7 @@
         value:[],
         options:[],
         from:{
+            MeunId:0,
             MeunName:'',
             MeId:null,
             MeunLink:''
@@ -38,6 +43,17 @@
       };
     },
     methods: {
+        FanT(){
+            this.from.MeunId = location.href.split('=')[1]
+            this.$http.get("https://localhost:44356/api/MeunInfo/FanT?id="+this.from.MeunId).then(res=>{
+                this.from = res.data
+
+                console.log(this.from.MeId)
+                
+                console.log(this.options)
+                console.log(this.value)
+            })
+        },
       handleChange() {
        this.$http.get("https://localhost:44356/api/MeunInfo/Cascading").then(res=>{
             var reg = new RegExp('\\,"children":\\[]', 'g')
@@ -47,22 +63,25 @@
       },
       onSubmit(){
         // debugger
-          this.from.MeId = this.value.slice(-1)[0];
+          //this.from.MeId = this.value.slice(-1)[0];
+          this.from.MeId=this.$refs["GetMeId"].checkedValue[this.$refs["GetMeId"].checkedValue.length-1];
           console.log(this.from);
             
-        this.$http.post("https://localhost:44356/api/MeunInfo/Add",this.from).then(res=>{
+        this.$http.post("https://localhost:44356/api/MeunInfo/Upd",this.from).then(res=>{
           if(res.data>0){
             this.$message({
-                message: '添加成功',
+                message: '修改成功',
                 type: 'success'
             });
-            this.$emit("AddTable",true);
+            this.$router.push('/MeunShow')
           }
         })
       }
     },
     created(){
         this.handleChange();
+
+        this.FanT();
         
     }
   };
