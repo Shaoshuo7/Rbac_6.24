@@ -167,5 +167,10 @@ namespace Application
 
             //return meunRepository.Upd(mapper.Map<Meun>(c));
         }
+
+        public List<MeunListDto> MeunListAll()
+        {
+            return mapper.Map<List<MeunListDto>>(meunRepository.MeunAll());
+        }
     }
 }

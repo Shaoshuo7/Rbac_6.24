@@ -55,6 +55,13 @@ namespace WebApplicationRBAC.Controllers
         {
             return meunService.Upd(c);
         }
+
+        [HttpGet]
+        [AllowAnonymous]
+        public List<MeunListDto> MeunListAll()
+        {
+            return meunService.MeunListAll();
+        }
     }
   
 }

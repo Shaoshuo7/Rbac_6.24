@@ -14,5 +14,6 @@ namespace Application
         int Add(AddDto c);
         Meun FanT(int id);
         int Upd(AddDto c);
+        List<MeunListDto> MeunListAll();
     }
 }

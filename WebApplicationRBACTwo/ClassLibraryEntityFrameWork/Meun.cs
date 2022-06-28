@@ -26,5 +26,6 @@ namespace ClassLibraryEntityFrameWork
         /// 菜单连接
         /// </summary>
         public string MeunLink { get; set; }
+        public bool IsDefault { get; set; }
     }
 }

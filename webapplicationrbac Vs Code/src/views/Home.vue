@@ -5,7 +5,7 @@
             <el-container>
                 <el-aside width="200px">
                     <el-menu
-                        unique-opened="true"
+                        :unique-opened="true"
                         default-active="2"
                         class="el-menu-vertical-demo"
                         @open="handleOpen"
@@ -13,20 +13,22 @@
                         background-color="#545c64"
                         text-color="#fff"
                         active-text-color="#ffd04b" :router="true">
-                        <el-submenu index="1">
+                        <el-submenu index="1" v-for="item in SelectMeun" :key="item.MeunId">
                             <template slot="title">
                             <i class="el-icon-location"></i>
-                            <span>菜单导航</span>
+                            <span>
+                              {{item.MeunName}}
+                            </span>
                             </template>
                             <el-menu-item-group>
-                            <template slot="title">分组一</template>
-                            <el-menu-item index="/">首页</el-menu-item>
-                            <el-menu-item index="/MeunShow">菜单</el-menu-item>
-                            <el-menu-item index="/MeunAdd">菜单添加</el-menu-item>
-                            <el-menu-item index="/MeunUpd">菜单编辑</el-menu-item>
+                              <el-menu-item v-for="items in MeunList.filter(t=>t.MeId==item.MeunId)" :key="items.MeunId">
+                               <el-menu-item :index="iteme.MeunLink" v-for="iteme in MeunList.filter(t=>t.MeId==items.MeunId && t.IsDefault)" :key="iteme.MeunId">
+                                  {{iteme.MeunName}}
+                                </el-menu-item> 
+                              </el-menu-item>
                             </el-menu-item-group>
                         </el-submenu>
-                        <el-submenu index="2">
+                        <!-- <el-submenu index="2">
                             <template slot="title">
                             <i class="el-icon-location"></i>
                             <span>角色导航</span>
@@ -37,11 +39,11 @@
                             <el-menu-item index="/RoleAdd">角色添加</el-menu-item>
                             <el-menu-item index="/RoleUpd">角色编辑</el-menu-item>
                             </el-menu-item-group>
-                        </el-submenu>
-                        <el-menu-item index="2">
+                        </el-submenu> -->
+                        <!-- <el-menu-item index="2">
                             <i class="el-icon-menu"></i>
                             <span slot="title">导航二</span>
-                        </el-menu-item>
+                        </el-menu-item> -->
                     </el-menu>
                 </el-aside>
                 <el-main>
@@ -54,6 +56,11 @@
 
 <script>
   export default {
+    data(){
+      return{
+        MeunList:[]
+      }
+    },
     methods: {
       handleOpen(key, keyPath) {
         console.log(key, keyPath);
@@ -61,7 +68,18 @@
       handleClose(key, keyPath) {
         console.log(key, keyPath);
       }
-    }
+    },
+    computed:{
+      SelectMeun(){
+        return this.MeunList.filter(t=>t.MeId==0);
+      }
+    },
+    created(){
+      this.$http.get("https://localhost:44356/api/MeunInfo/MeunListAll").then(res=>{
+        this.MeunList = res.data;
+      })
+    },
+    
   }
 </script>
 
