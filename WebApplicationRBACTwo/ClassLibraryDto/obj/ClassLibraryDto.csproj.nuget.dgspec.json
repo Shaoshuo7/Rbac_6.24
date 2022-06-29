@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\学习资料\\WebApplicationRBACTwo\\ClassLibraryDto\\ClassLibraryDto.csproj": {}
+    "C:\\Users\\k\\OneDrive\\桌面\\6.24\\Rbac\\WebApplicationRBACTwo\\ClassLibraryDto\\ClassLibraryDto.csproj": {}
   },
   "projects": {
-    "D:\\学习资料\\WebApplicationRBACTwo\\ClassLibraryDto\\ClassLibraryDto.csproj": {
+    "C:\\Users\\k\\OneDrive\\桌面\\6.24\\Rbac\\WebApplicationRBACTwo\\ClassLibraryDto\\ClassLibraryDto.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\学习资料\\WebApplicationRBACTwo\\ClassLibraryDto\\ClassLibraryDto.csproj",
+        "projectUniqueName": "C:\\Users\\k\\OneDrive\\桌面\\6.24\\Rbac\\WebApplicationRBACTwo\\ClassLibraryDto\\ClassLibraryDto.csproj",
         "projectName": "ClassLibraryDto",
-        "projectPath": "D:\\学习资料\\WebApplicationRBACTwo\\ClassLibraryDto\\ClassLibraryDto.csproj",
+        "projectPath": "C:\\Users\\k\\OneDrive\\桌面\\6.24\\Rbac\\WebApplicationRBACTwo\\ClassLibraryDto\\ClassLibraryDto.csproj",
         "packagesPath": "C:\\Users\\k\\.nuget\\packages\\",
-        "outputPath": "D:\\学习资料\\WebApplicationRBACTwo\\ClassLibraryDto\\obj\\",
+        "outputPath": "C:\\Users\\k\\OneDrive\\桌面\\6.24\\Rbac\\WebApplicationRBACTwo\\ClassLibraryDto\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

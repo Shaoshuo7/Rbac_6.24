@@ -36,6 +36,7 @@ const routes = [
       {path: '/RoleShow',name: 'RoleShow',component: () => import('../views/RoleShow.vue')},
       {path: '/RoleAdd',name: 'RoleAdd',component: () => import('../views/RoleAdd.vue')},
       {path: '/RoleUpd',name: 'RoleUpd',component: () => import('../views/RoleUpd.vue')},
+      {path: '/AdminShow',name: 'AdminShow',component: () => import('../views/AdminShow.vue')},
     ]
   }
 ]

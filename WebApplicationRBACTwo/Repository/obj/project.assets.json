@@ -5698,11 +5698,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\学习资料\\WebApplicationRBACTwo\\Repository\\Repository.csproj",
+      "projectUniqueName": "C:\\Users\\k\\OneDrive\\桌面\\6.24\\Rbac\\WebApplicationRBACTwo\\Repository\\Repository.csproj",
       "projectName": "Repository",
-      "projectPath": "D:\\学习资料\\WebApplicationRBACTwo\\Repository\\Repository.csproj",
+      "projectPath": "C:\\Users\\k\\OneDrive\\桌面\\6.24\\Rbac\\WebApplicationRBACTwo\\Repository\\Repository.csproj",
       "packagesPath": "C:\\Users\\k\\.nuget\\packages\\",
-      "outputPath": "D:\\学习资料\\WebApplicationRBACTwo\\Repository\\obj\\",
+      "outputPath": "C:\\Users\\k\\OneDrive\\桌面\\6.24\\Rbac\\WebApplicationRBACTwo\\Repository\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -5722,11 +5722,11 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "D:\\学习资料\\WebApplicationRBACTwo\\ClassLibraryDto\\ClassLibraryDto.csproj": {
-              "projectPath": "D:\\学习资料\\WebApplicationRBACTwo\\ClassLibraryDto\\ClassLibraryDto.csproj"
+            "C:\\Users\\k\\OneDrive\\桌面\\6.24\\Rbac\\WebApplicationRBACTwo\\ClassLibraryDto\\ClassLibraryDto.csproj": {
+              "projectPath": "C:\\Users\\k\\OneDrive\\桌面\\6.24\\Rbac\\WebApplicationRBACTwo\\ClassLibraryDto\\ClassLibraryDto.csproj"
             },
-            "D:\\学习资料\\WebApplicationRBACTwo\\ClassLibraryEntityFrameWork\\ClassLibraryEntityFrameWork.csproj": {
-              "projectPath": "D:\\学习资料\\WebApplicationRBACTwo\\ClassLibraryEntityFrameWork\\ClassLibraryEntityFrameWork.csproj"
+            "C:\\Users\\k\\OneDrive\\桌面\\6.24\\Rbac\\WebApplicationRBACTwo\\ClassLibraryEntityFrameWork\\ClassLibraryEntityFrameWork.csproj": {
+              "projectPath": "C:\\Users\\k\\OneDrive\\桌面\\6.24\\Rbac\\WebApplicationRBACTwo\\ClassLibraryEntityFrameWork\\ClassLibraryEntityFrameWork.csproj"
             }
           }
         }
