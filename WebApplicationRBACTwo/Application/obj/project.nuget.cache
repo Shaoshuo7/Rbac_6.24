@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "y1k3gpvcuyAC0Gd9SoXOVKIjjCL8SW3fGaNYgiWp9Crr4cKeTVrPgCMYUHrQ7fBQtb4/NzNb/Xf5L6R+XZ4dcw==",
+  "dgSpecHash": "ulTxKGuUNnNYhMQIulmTdWerx51n2ANoGbFTzSRtvIe5Or/ajUTPXG4yJR1xqxGgl2t+LgHTqBY9lkyOgo2paA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\k\\OneDrive\\桌面\\6.24\\Rbac\\WebApplicationRBACTwo\\Application\\Application.csproj",
+  "projectFilePath": "D:\\学习资料\\WebApplicationRBACTwo\\Application\\Application.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\k\\.nuget\\packages\\automapper\\11.0.0\\automapper.11.0.0.nupkg.sha512",
     "C:\\Users\\k\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\11.0.0\\automapper.extensions.microsoft.dependencyinjection.11.0.0.nupkg.sha512",

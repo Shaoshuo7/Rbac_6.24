@@ -15,5 +15,6 @@ namespace Repository
         T FanT(Expression<Func<T, bool>> predicate);
         List<T> MeunAll();
         int Upd(T c);
+        int Assign(List<T> ment);
     }
 }

@@ -19,5 +19,20 @@ namespace ClassLibraryEntityFrameWork
         public DbSet<AdminAndRole> AdminAndRole { get; set; }
         public DbSet<Meun> Meun { get; set; }
         public DbSet<RoleAndMeun> RoleAndMeun { get; set; }
+
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            modelBuilder.Entity<RoleAndMeun>(t =>
+            {
+                t.HasOne<Role>().WithMany().HasForeignKey(s => s.RoleId);
+                t.HasOne<Meun>().WithMany().HasForeignKey(s => s.MeunId);
+            });
+
+            modelBuilder.Entity<AdminAndRole>(t =>
+            {
+                t.HasOne<Admin>().WithMany().HasForeignKey(s => s.AdmId);
+                t.HasOne<Role>().WithMany().HasForeignKey(s => s.RoleId);
+            });
+        }
     }
 }

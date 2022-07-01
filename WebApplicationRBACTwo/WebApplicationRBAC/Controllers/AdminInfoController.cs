@@ -1,9 +1,7 @@
 ﻿using Application;
 using ClassLibraryDto;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using System;
-using System.Collections.Generic;
 
 namespace WebApplicationRBAC.Controllers
 {
@@ -49,9 +47,9 @@ namespace WebApplicationRBAC.Controllers
         }
 
         [HttpGet]
-        public List<AdminDto> GetShow()
+        public ResultPage<AdminDto> GetShow([FromQuery] Pager dto)
         {
-            return adminService.GetShow();
+            return adminService.Paginations(dto);
         }
 
         [HttpGet]

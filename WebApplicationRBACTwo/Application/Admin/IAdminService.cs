@@ -13,5 +13,6 @@ namespace Application
         ResultDto AdminAdd(AdminDto c);
 
         TokenDto AdmLogin(LoginDto c);
+        ResultPage<AdminDto> Paginations(Pager dto);
     }
 }

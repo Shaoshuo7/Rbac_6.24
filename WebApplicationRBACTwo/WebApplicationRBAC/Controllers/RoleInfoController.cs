@@ -47,5 +47,18 @@ namespace WebApplicationRBAC.Controllers
         { 
             return role.GetShow();
         }
+
+        //[HttpPost]
+        //public int GetAssignment(AssignmentDto c)
+        //{ 
+        //    return role.GetAssignment(c);
+        //}
+
+        [HttpPost]
+        public IActionResult Saverp(AssignmentDto c)
+        { 
+            role.GetAssignment(c);
+            return Ok();
+        }
     }
 }

@@ -22,10 +22,10 @@ namespace ClassLibraryEntityFrameWork
         /// </summary>
         public int RoleId { get; set; }
 
-        [ForeignKey("AdmId")]
-        public Admin Admin { get; set; }
+        //[ForeignKey("AdmId")]
+        //public Admin Admin { get; set; }
 
-        [ForeignKey("RoleId")]
-        public Role Role { get; set; }
+        //[ForeignKey("RoleId")]
+        //public Role Role { get; set; }
     }
 }

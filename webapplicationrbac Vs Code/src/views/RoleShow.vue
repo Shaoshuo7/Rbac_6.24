@@ -32,20 +32,35 @@
                 </template>
             </el-table-column>
         </el-table>
+
+        <el-dialog
+        title="分配权限"
+        :visible.sync="FendialogVisible"
+        width="30%">
+            <role-and-meun ref="RoleAndMeun" :RoleId="RoleId"/>
+
+        <span slot="footer" class="dialog-footer">
+            <el-button @click="FendialogVisible = false">取 消</el-button>
+            <el-button type="primary" @click="EpitRoleAndMeun">确 定</el-button>
+        </span>
+        </el-dialog>
     </div>
 </template>
 
 <script>
 import RoleAdd from '@/views/RoleAdd.vue'
-
+import RoleAndMeun from '@/views/RoleAndMeun.vue'
     export default {
         components: {
-            RoleAdd
+            RoleAdd,
+            RoleAndMeun
         },
       data() {
         return {
           tableData: [],
-          dialogVisible:false
+          dialogVisible:false,
+          FendialogVisible:false,
+            RoleId:0
         }
       },
       methods:{
@@ -84,7 +99,23 @@ import RoleAdd from '@/views/RoleAdd.vue'
             this.$router.push('/RoleUpd?id='+id)
         },
         OnFen(id){
-            alert("没写");
+            this.RoleId = id;
+
+            this.FendialogVisible = true
+        },
+        EpitRoleAndMeun(){
+            var checkedId = this.$refs.RoleAndMeun.$refs.RoleAndMeun.getCheckedNodes(true,true).map(t=>t.value);
+            var RoleId = this.RoleId;
+            this.$http.post("https://localhost:44356/api/RoleInfo/Saverp",{MeunId:checkedId,RoleId:RoleId}).then(res=>{
+                this.$message({
+                    message: '权限分配成功',
+                    type: 'success'
+                });
+
+                this.Load()
+            });
+
+            this.FendialogVisible = false
         }
       },
       created(){

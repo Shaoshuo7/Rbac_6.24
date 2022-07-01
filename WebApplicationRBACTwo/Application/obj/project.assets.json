@@ -5863,11 +5863,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\k\\OneDrive\\桌面\\6.24\\Rbac\\WebApplicationRBACTwo\\Application\\Application.csproj",
+      "projectUniqueName": "D:\\学习资料\\WebApplicationRBACTwo\\Application\\Application.csproj",
       "projectName": "Application",
-      "projectPath": "C:\\Users\\k\\OneDrive\\桌面\\6.24\\Rbac\\WebApplicationRBACTwo\\Application\\Application.csproj",
+      "projectPath": "D:\\学习资料\\WebApplicationRBACTwo\\Application\\Application.csproj",
       "packagesPath": "C:\\Users\\k\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\k\\OneDrive\\桌面\\6.24\\Rbac\\WebApplicationRBACTwo\\Application\\obj\\",
+      "outputPath": "D:\\学习资料\\WebApplicationRBACTwo\\Application\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -5887,11 +5887,11 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "C:\\Users\\k\\OneDrive\\桌面\\6.24\\Rbac\\WebApplicationRBACTwo\\ClassLibraryDto\\ClassLibraryDto.csproj": {
-              "projectPath": "C:\\Users\\k\\OneDrive\\桌面\\6.24\\Rbac\\WebApplicationRBACTwo\\ClassLibraryDto\\ClassLibraryDto.csproj"
+            "D:\\学习资料\\WebApplicationRBACTwo\\ClassLibraryDto\\ClassLibraryDto.csproj": {
+              "projectPath": "D:\\学习资料\\WebApplicationRBACTwo\\ClassLibraryDto\\ClassLibraryDto.csproj"
             },
-            "C:\\Users\\k\\OneDrive\\桌面\\6.24\\Rbac\\WebApplicationRBACTwo\\Repository\\Repository.csproj": {
-              "projectPath": "C:\\Users\\k\\OneDrive\\桌面\\6.24\\Rbac\\WebApplicationRBACTwo\\Repository\\Repository.csproj"
+            "D:\\学习资料\\WebApplicationRBACTwo\\Repository\\Repository.csproj": {
+              "projectPath": "D:\\学习资料\\WebApplicationRBACTwo\\Repository\\Repository.csproj"
             }
           }
         }

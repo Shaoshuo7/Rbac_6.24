@@ -112,5 +112,21 @@ namespace Application
 
             return new TokenDto { Code = 0, Msg = "登陆成功", Token = jwt };
         }
+
+        public ResultPage<AdminDto> Paginations(Pager dto)
+        {
+            var list = adminRepository.MeunAll().AsQueryable();
+
+            var count = list.Count();
+
+            var query = list.OrderBy(t => t.AdmId).Skip((dto.Page - 1) * dto.Size).Take(dto.Size).ToList();
+
+            ResultPage<AdminDto> result = new ResultPage<AdminDto>();
+            
+            result.TotalCount = count;
+            result.Data = mapper.Map<List<AdminDto>>(query);
+
+            return result;
+        }
     }
 }

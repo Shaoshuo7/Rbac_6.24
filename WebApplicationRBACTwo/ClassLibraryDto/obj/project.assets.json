@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\k\\OneDrive\\桌面\\6.24\\Rbac\\WebApplicationRBACTwo\\ClassLibraryDto\\ClassLibraryDto.csproj",
+      "projectUniqueName": "D:\\学习资料\\WebApplicationRBACTwo\\ClassLibraryDto\\ClassLibraryDto.csproj",
       "projectName": "ClassLibraryDto",
-      "projectPath": "C:\\Users\\k\\OneDrive\\桌面\\6.24\\Rbac\\WebApplicationRBACTwo\\ClassLibraryDto\\ClassLibraryDto.csproj",
+      "projectPath": "D:\\学习资料\\WebApplicationRBACTwo\\ClassLibraryDto\\ClassLibraryDto.csproj",
       "packagesPath": "C:\\Users\\k\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\k\\OneDrive\\桌面\\6.24\\Rbac\\WebApplicationRBACTwo\\ClassLibraryDto\\obj\\",
+      "outputPath": "D:\\学习资料\\WebApplicationRBACTwo\\ClassLibraryDto\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

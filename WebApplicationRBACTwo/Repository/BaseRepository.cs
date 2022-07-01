@@ -63,6 +63,20 @@ namespace Repository
 
             return db.SaveChanges();
         }
+
+        public int Assign(List<T> ment)
+        {
+            //db.Set<List<T>>().AddRange(ment);
+
+            //return db.SaveChanges();
+
+            foreach (var item in ment)
+            {
+                db.Set<T>().Add(item);
+            }
+
+            return db.SaveChanges();
+        }
     }
 }
 

@@ -5984,11 +5984,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\k\\OneDrive\\桌面\\6.24\\Rbac\\WebApplicationRBACTwo\\WebApplicationRBAC\\WebApplicationRBAC.csproj",
+      "projectUniqueName": "D:\\学习资料\\WebApplicationRBACTwo\\WebApplicationRBAC\\WebApplicationRBAC.csproj",
       "projectName": "WebApplicationRBAC",
-      "projectPath": "C:\\Users\\k\\OneDrive\\桌面\\6.24\\Rbac\\WebApplicationRBACTwo\\WebApplicationRBAC\\WebApplicationRBAC.csproj",
+      "projectPath": "D:\\学习资料\\WebApplicationRBACTwo\\WebApplicationRBAC\\WebApplicationRBAC.csproj",
       "packagesPath": "C:\\Users\\k\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\k\\OneDrive\\桌面\\6.24\\Rbac\\WebApplicationRBACTwo\\WebApplicationRBAC\\obj\\",
+      "outputPath": "D:\\学习资料\\WebApplicationRBACTwo\\WebApplicationRBAC\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -6008,11 +6008,11 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "C:\\Users\\k\\OneDrive\\桌面\\6.24\\Rbac\\WebApplicationRBACTwo\\Application\\Application.csproj": {
-              "projectPath": "C:\\Users\\k\\OneDrive\\桌面\\6.24\\Rbac\\WebApplicationRBACTwo\\Application\\Application.csproj"
+            "D:\\学习资料\\WebApplicationRBACTwo\\Application\\Application.csproj": {
+              "projectPath": "D:\\学习资料\\WebApplicationRBACTwo\\Application\\Application.csproj"
             },
-            "C:\\Users\\k\\OneDrive\\桌面\\6.24\\Rbac\\WebApplicationRBACTwo\\ClassLibraryEntityFrameWork\\ClassLibraryEntityFrameWork.csproj": {
-              "projectPath": "C:\\Users\\k\\OneDrive\\桌面\\6.24\\Rbac\\WebApplicationRBACTwo\\ClassLibraryEntityFrameWork\\ClassLibraryEntityFrameWork.csproj"
+            "D:\\学习资料\\WebApplicationRBACTwo\\ClassLibraryEntityFrameWork\\ClassLibraryEntityFrameWork.csproj": {
+              "projectPath": "D:\\学习资料\\WebApplicationRBACTwo\\ClassLibraryEntityFrameWork\\ClassLibraryEntityFrameWork.csproj"
             }
           }
         }

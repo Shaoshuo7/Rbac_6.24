@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "3bRtg+CCOBfbgKtYBntrw234RInd8H77YlYIjW317hHpXLi3hN8lTx+aiPjBvMQIGEEpbgON9SG5R7DBgSncpQ==",
+  "dgSpecHash": "fwBFkZSKCfLPN+eHakg4J4NeK38P9BEWbNYJkSiP+JaFGI4QY+gsPdasxiZcgbJLePZc9caTX2SuyWvyWBr5qA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\k\\OneDrive\\桌面\\6.24\\Rbac\\WebApplicationRBACTwo\\ClassLibraryEntityFrameWork\\ClassLibraryEntityFrameWork.csproj",
+  "projectFilePath": "D:\\学习资料\\WebApplicationRBACTwo\\ClassLibraryEntityFrameWork\\ClassLibraryEntityFrameWork.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\k\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\k\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",

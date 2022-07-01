@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\k\\OneDrive\\桌面\\6.24\\Rbac\\WebApplicationRBACTwo\\ClassLibraryEntityFrameWork\\ClassLibraryEntityFrameWork.csproj": {}
+    "D:\\学习资料\\WebApplicationRBACTwo\\ClassLibraryEntityFrameWork\\ClassLibraryEntityFrameWork.csproj": {}
   },
   "projects": {
-    "C:\\Users\\k\\OneDrive\\桌面\\6.24\\Rbac\\WebApplicationRBACTwo\\ClassLibraryEntityFrameWork\\ClassLibraryEntityFrameWork.csproj": {
+    "D:\\学习资料\\WebApplicationRBACTwo\\ClassLibraryEntityFrameWork\\ClassLibraryEntityFrameWork.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\k\\OneDrive\\桌面\\6.24\\Rbac\\WebApplicationRBACTwo\\ClassLibraryEntityFrameWork\\ClassLibraryEntityFrameWork.csproj",
+        "projectUniqueName": "D:\\学习资料\\WebApplicationRBACTwo\\ClassLibraryEntityFrameWork\\ClassLibraryEntityFrameWork.csproj",
         "projectName": "ClassLibraryEntityFrameWork",
-        "projectPath": "C:\\Users\\k\\OneDrive\\桌面\\6.24\\Rbac\\WebApplicationRBACTwo\\ClassLibraryEntityFrameWork\\ClassLibraryEntityFrameWork.csproj",
+        "projectPath": "D:\\学习资料\\WebApplicationRBACTwo\\ClassLibraryEntityFrameWork\\ClassLibraryEntityFrameWork.csproj",
         "packagesPath": "C:\\Users\\k\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\k\\OneDrive\\桌面\\6.24\\Rbac\\WebApplicationRBACTwo\\ClassLibraryEntityFrameWork\\obj\\",
+        "outputPath": "D:\\学习资料\\WebApplicationRBACTwo\\ClassLibraryEntityFrameWork\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

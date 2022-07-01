@@ -21,11 +21,11 @@
                             </span>
                             </template>
                             <el-menu-item-group>
-                              <el-menu-item v-for="items in MeunList.filter(t=>t.MeId==item.MeunId)" :key="items.MeunId">
+                              <template v-for="items in MeunList.filter(t=>t.MeId==item.MeunId)">
                                <el-menu-item :index="iteme.MeunLink" v-for="iteme in MeunList.filter(t=>t.MeId==items.MeunId && t.IsDefault)" :key="iteme.MeunId">
                                   {{iteme.MeunName}}
                                 </el-menu-item> 
-                              </el-menu-item>
+                              </template>
                             </el-menu-item-group>
                         </el-submenu>
                         <!-- <el-submenu index="2">

@@ -13,5 +13,6 @@ namespace Application
         int Adds(RoleDto c);
 
         int Upds(RoleDto c);
+        int GetAssignment(AssignmentDto c);
     }
 }

@@ -107,6 +107,7 @@ namespace WebApplicationRBAC
             services.AddScoped<IRoleService, RoleService>();
             services.AddScoped<IAdminRepository, AdminRepository>();
             services.AddScoped<IAdminService, AdminService>();
+            services.AddScoped<IRoleAndMeunRepository, RoleAndMeunRepository>();
 
             services.AddDbContext<MyDbContext>(
                 option => option.UseSqlServer(Configuration.GetConnectionString("sqlserver")));
