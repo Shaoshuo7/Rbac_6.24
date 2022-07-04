@@ -14,5 +14,7 @@ namespace Application
 
         int Upds(RoleDto c);
         int GetAssignment(AssignmentDto c);
+        List<MeunRoleDto> GetPermiss(int RoleId);
+        int DelRoleMeun(int id);
     }
 }

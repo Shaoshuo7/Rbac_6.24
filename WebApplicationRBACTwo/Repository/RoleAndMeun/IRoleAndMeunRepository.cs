@@ -9,5 +9,6 @@ namespace Repository
 {
     public interface IRoleAndMeunRepository : IBaseRepository<RoleAndMeun,int>
     {
+        int DelAll(int[] ids);
     }
 }

@@ -13,12 +13,14 @@ namespace Application
     public class RoleService : BaseService<Role,RoleDto>, IRoleService
     {
         private readonly IRoleRepository roleRepository;
+        private readonly IMapper mapper;
         private readonly IRoleAndMeunRepository roleAndMeunRepository;
 
         public RoleService(IRoleRepository roleRepository,IMapper mapper,IRoleAndMeunRepository roleAndMeunRepository)
             :base(roleRepository,mapper)
         {
             this.roleRepository = roleRepository;
+            this.mapper = mapper;
             this.roleAndMeunRepository = roleAndMeunRepository;
         }
 
@@ -47,9 +49,21 @@ namespace Application
 
         public int GetAssignment(AssignmentDto c)
         {
+            //roleAndMeunRepository.DelAlls(c.RoleId);
+
             var values = c.MeunId.Select(t => new RoleAndMeun { MeunId = t, RoleId = c.RoleId }).ToList();
 
             return roleAndMeunRepository.Assign(values);
+        }
+
+        public List<MeunRoleDto> GetPermiss(int RoleId)
+        {
+            return mapper.Map<List<MeunRoleDto>>(roleAndMeunRepository.GetQuery().Where(t => t.RoleId == RoleId).ToList());
+        }
+
+        public int DelRoleMeun(int id)
+        {
+            return roleAndMeunRepository.DelAlls(t => t.RoleId == id);
         }
     }
 }

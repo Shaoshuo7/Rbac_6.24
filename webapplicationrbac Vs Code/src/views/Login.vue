@@ -73,6 +73,22 @@ import Enroll from '@/views/Enroll.vue'
             return;
         }
 
+        if(this.form.Varif2 == "")
+        {
+            this.$message({
+                message: '验证码不能为空',
+                type: 'warning'
+            });
+
+            return;
+        }
+
+        if(this.form.Varif2 != this.form.Varif1)
+        {
+            this.$message('验证码错误');
+            return;
+        }
+
         this.$http.post("https://localhost:44356/api/AdminInfo/AdmLogin",this.form).then(res=>{
             if(res.data.Code == 1){
                 this.$message('该用户未注册');

@@ -106,6 +106,7 @@ import RoleAndMeun from '@/views/RoleAndMeun.vue'
         EpitRoleAndMeun(){
             var checkedId = this.$refs.RoleAndMeun.$refs.RoleAndMeun.getCheckedNodes(true,true).map(t=>t.value);
             var RoleId = this.RoleId;
+            this.DelRoleMeun();
             this.$http.post("https://localhost:44356/api/RoleInfo/Saverp",{MeunId:checkedId,RoleId:RoleId}).then(res=>{
                 this.$message({
                     message: '权限分配成功',
@@ -116,6 +117,11 @@ import RoleAndMeun from '@/views/RoleAndMeun.vue'
             });
 
             this.FendialogVisible = false
+        },
+        DelRoleMeun(){
+            this.$http.get("https://localhost:44356/api/RoleInfo/DelRoleMeun?id="+this.RoleId).then(res=>{
+
+            })
         }
       },
       created(){

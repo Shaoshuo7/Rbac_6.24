@@ -38,6 +38,17 @@ namespace Repository
             return db.SaveChanges();
         }
 
+        public virtual int DelAlls(Expression<Func<T, bool>> predicate)
+        {
+            var list = db.Set<T>().Where(predicate);
+            foreach (var item in list)
+            { 
+                db.Remove(item);
+            }
+
+            return db.SaveChanges();
+        }
+
         public virtual int Add(T c)
         {
             db.Set<T>().Add(c);
@@ -76,6 +87,18 @@ namespace Repository
             }
 
             return db.SaveChanges();
+        }
+
+        public virtual IQueryable<T> GetQuery(Expression<Func<T, bool>> predicate = null)
+        {
+            var query = db.Set<T>().AsQueryable();
+
+            if (predicate != null)
+            { 
+                query = query.Where(predicate);
+            }
+
+            return query;
         }
     }
 }

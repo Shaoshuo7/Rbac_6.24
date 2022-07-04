@@ -115,7 +115,6 @@ D:\学习资料\WebApplicationRBACTwo\WebApplicationRBAC\obj\Debug\net5.0\WebApp
 D:\学习资料\WebApplicationRBACTwo\WebApplicationRBAC\obj\Debug\net5.0\WebApplicationRBAC.AssemblyInfoInputs.cache
 D:\学习资料\WebApplicationRBACTwo\WebApplicationRBAC\obj\Debug\net5.0\WebApplicationRBAC.AssemblyInfo.cs
 D:\学习资料\WebApplicationRBACTwo\WebApplicationRBAC\obj\Debug\net5.0\WebApplicationRBAC.csproj.CoreCompileInputs.cache
-D:\学习资料\WebApplicationRBACTwo\WebApplicationRBAC\obj\Debug\net5.0\WebApplicationRBAC.MvcApplicationPartsAssemblyInfo.cs
 D:\学习资料\WebApplicationRBACTwo\WebApplicationRBAC\obj\Debug\net5.0\WebApplicationRBAC.MvcApplicationPartsAssemblyInfo.cache
 D:\学习资料\WebApplicationRBACTwo\WebApplicationRBAC\obj\Debug\net5.0\scopedcss\bundle\WebApplicationRBAC.styles.css
 D:\学习资料\WebApplicationRBACTwo\WebApplicationRBAC\obj\Debug\net5.0\staticwebassets\WebApplicationRBAC.StaticWebAssets.Manifest.cache

@@ -60,5 +60,17 @@ namespace WebApplicationRBAC.Controllers
             role.GetAssignment(c);
             return Ok();
         }
+
+        [HttpGet]
+        public List<MeunRoleDto> GetPermiss(int RoleId)
+        {
+            return role.GetPermiss(RoleId);
+        }
+
+        [HttpGet]
+        public int DelRoleMeun(int id)
+        { 
+            return role.DelRoleMeun(id);
+        }
     }
 }

@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Linq.Expressions;
 
 namespace Repository
@@ -16,5 +17,9 @@ namespace Repository
         List<T> MeunAll();
         int Upd(T c);
         int Assign(List<T> ment);
+
+        IQueryable<T> GetQuery(Expression<Func<T, bool>> predicate = null);
+
+        int DelAlls(Expression<Func<T, bool>> predicate);
     }
 }

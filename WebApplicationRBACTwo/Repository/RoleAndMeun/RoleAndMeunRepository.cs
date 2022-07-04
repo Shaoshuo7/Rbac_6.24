@@ -13,5 +13,14 @@ namespace Repository
         {
             this.db = myDbContext;
         }
+
+        public virtual int DelAll(int[] ids)
+        {
+            var list = db.Set<RoleAndMeun>().Where(t => ids.Contains(t.RoleAndMeunId));
+
+            db.Set<RoleAndMeun>().RemoveRange(list);
+
+            return db.SaveChanges();
+        }
     }
 }
