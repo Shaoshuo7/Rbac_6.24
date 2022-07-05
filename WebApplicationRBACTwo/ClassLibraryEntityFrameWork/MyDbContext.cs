@@ -30,9 +30,10 @@ namespace ClassLibraryEntityFrameWork
 
             modelBuilder.Entity<AdminAndRole>(t =>
             {
-                t.HasOne<Admin>().WithMany().HasForeignKey(s => s.AdmId);
+                //t.HasOne<Admin>().WithMany().HasForeignKey(s => s.AdminId);
                 t.HasOne<Role>().WithMany().HasForeignKey(s => s.RoleId);
             });
+            //modelBuilder.Entity<Company>().HasMany(t => t.Users).WithRequired(p => p.Company).WillCascadeOnDelete(false);
         }
     }
 }

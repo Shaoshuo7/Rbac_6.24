@@ -10,3 +10,6 @@ D:\学习资料\WebApplicationRBACTwo\ClassLibraryDto\obj\Debug\net5.0\ClassLibr
 D:\学习资料\WebApplicationRBACTwo\ClassLibraryDto\obj\Debug\net5.0\refint\ClassLibraryDto.dll
 D:\学习资料\WebApplicationRBACTwo\ClassLibraryDto\obj\Debug\net5.0\ClassLibraryDto.pdb
 D:\学习资料\WebApplicationRBACTwo\ClassLibraryDto\obj\Debug\net5.0\ref\ClassLibraryDto.dll
+D:\学习资料\WebApplicationRBACTwo\ClassLibraryDto\bin\Debug\net5.0\ClassLibraryEntityFrameWork.dll
+D:\学习资料\WebApplicationRBACTwo\ClassLibraryDto\bin\Debug\net5.0\ClassLibraryEntityFrameWork.pdb
+D:\学习资料\WebApplicationRBACTwo\ClassLibraryDto\obj\Debug\net5.0\ClassLibraryDto.csproj.CopyComplete

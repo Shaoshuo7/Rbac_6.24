@@ -146,3 +146,4 @@ D:\学习资料\WebApplicationRBACTwo\WebApplicationRBAC\bin\Debug\net5.0\Micros
 D:\学习资料\WebApplicationRBACTwo\WebApplicationRBAC\bin\Debug\net5.0\Scrutor.dll
 D:\学习资料\WebApplicationRBACTwo\WebApplicationRBAC\bin\Debug\net5.0\Swashbuckle.AspNetCore.Filters.dll
 D:\学习资料\WebApplicationRBACTwo\WebApplicationRBAC\bin\Debug\net5.0\Swashbuckle.AspNetCore.Filters.Abstractions.dll
+D:\学习资料\WebApplicationRBACTwo\WebApplicationRBAC\obj\Debug\net5.0\WebApplicationRBAC.MvcApplicationPartsAssemblyInfo.cs

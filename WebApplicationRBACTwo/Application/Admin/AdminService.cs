@@ -119,7 +119,7 @@ namespace Application
 
             var count = list.Count();
 
-            var query = list.OrderBy(t => t.AdmId).Skip((dto.Page - 1) * dto.Size).Take(dto.Size).ToList();
+            var query = list.OrderBy(t => t.AdminId).Skip((dto.Page - 1) * dto.Size).Take(dto.Size).ToList();
 
             ResultPage<AdminDto> result = new ResultPage<AdminDto>();
             
@@ -127,6 +127,25 @@ namespace Application
             result.Data = mapper.Map<List<AdminDto>>(query);
 
             return result;
+        }
+
+        public ResultDto Permis(AdminDto c)
+        {
+            if (adminRepository.FanT(t => t.AdmName == c.AdmName.Trim().ToLower()) != null)
+            {
+                return new ResultDto { Code = 1, Msg = "已经存在该用户" };
+            }
+
+            c.AdmName = c.AdmName.Trim().ToUpper();
+            c.AdmPassWord = Md5(c.AdmPassWord.Trim());
+            c.CreateTime = DateTime.Now;
+            c.LastDateTime = DateTime.Now;
+
+            var Entity = mapper.Map<Admin>(c);
+
+            adminRepository.Add(Entity);
+
+            return new ResultDto { Code = 0, Msg = "注册成功" };
         }
     }
 }

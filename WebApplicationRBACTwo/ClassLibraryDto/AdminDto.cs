@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ClassLibraryEntityFrameWork;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -8,7 +9,7 @@ namespace ClassLibraryDto
 {
     public class AdminDto
     {
-        public int AdmId { get; set; }
+        public int AdminId { get; set; }
         /// <summary>
         /// 账号
         /// </summary>
@@ -29,5 +30,7 @@ namespace ClassLibraryDto
         /// 当前时间
         /// </summary>
         public DateTime CreateTime { get; set; }
+        public int[] RoleId { get; set; }
+        public List<AdminAndRole> AdminAndRole { get; set; }
     }
 }

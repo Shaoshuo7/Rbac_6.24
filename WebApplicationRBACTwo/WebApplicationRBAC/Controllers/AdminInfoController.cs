@@ -60,5 +60,11 @@ namespace WebApplicationRBAC.Controllers
 
             return Verific;
         }
+
+        [HttpPost]
+        public ResultDto Permis(AdminDto c)
+        {
+            return adminService.Permis(c);
+        }
     }
 }

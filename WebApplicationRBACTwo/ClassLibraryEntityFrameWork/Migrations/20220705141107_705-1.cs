@@ -2,7 +2,7 @@
 
 namespace ClassLibraryEntityFrameWork.Migrations
 {
-    public partial class Init701 : Migration
+    public partial class _7051 : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {

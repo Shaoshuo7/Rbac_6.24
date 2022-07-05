@@ -15,11 +15,5 @@ namespace ClassLibraryEntityFrameWork
         public int RoleAndMeunId { get; set; }
         public int RoleId { get; set; }
         public int MeunId { get; set; }
-
-        //[ForeignKey("RoleId")]
-        //public Role Role { get; set; }
-
-        //[ForeignKey("MeunId")]
-        //public Meun Meun { get; set; }
     }
 }

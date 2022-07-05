@@ -16,16 +16,10 @@ namespace ClassLibraryEntityFrameWork
         /// <summary>
         /// 管理员Id
         /// </summary>
-        public int AdmId { get; set; }
+        public int AdminId { get; set; }
         /// <summary>
         /// 角色Id
         /// </summary>
         public int RoleId { get; set; }
-
-        //[ForeignKey("AdmId")]
-        //public Admin Admin { get; set; }
-
-        //[ForeignKey("RoleId")]
-        //public Role Role { get; set; }
     }
 }

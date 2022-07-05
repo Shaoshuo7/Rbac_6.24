@@ -10,8 +10,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace ClassLibraryEntityFrameWork.Migrations
 {
     [DbContext(typeof(MyDbContext))]
-    [Migration("20220701113350_Init701")]
-    partial class Init701
+    [Migration("20220705140434_InitCore")]
+    partial class InitCore
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -23,7 +23,7 @@ namespace ClassLibraryEntityFrameWork.Migrations
 
             modelBuilder.Entity("ClassLibraryEntityFrameWork.Admin", b =>
                 {
-                    b.Property<int>("AdmId")
+                    b.Property<int>("AdminId")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int")
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
@@ -55,7 +55,7 @@ namespace ClassLibraryEntityFrameWork.Migrations
                     b.Property<string>("LastLoginIP")
                         .HasColumnType("nvarchar(max)");
 
-                    b.HasKey("AdmId");
+                    b.HasKey("AdminId");
 
                     b.ToTable("Admin");
                 });
@@ -67,7 +67,7 @@ namespace ClassLibraryEntityFrameWork.Migrations
                         .HasColumnType("int")
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
-                    b.Property<int>("AdmId")
+                    b.Property<int>("AdminId")
                         .HasColumnType("int");
 
                     b.Property<int>("RoleId")
@@ -75,7 +75,7 @@ namespace ClassLibraryEntityFrameWork.Migrations
 
                     b.HasKey("AdminAndRoleId");
 
-                    b.HasIndex("AdmId");
+                    b.HasIndex("AdminId");
 
                     b.HasIndex("RoleId");
 
@@ -166,7 +166,7 @@ namespace ClassLibraryEntityFrameWork.Migrations
                 {
                     b.HasOne("ClassLibraryEntityFrameWork.Admin", null)
                         .WithMany()
-                        .HasForeignKey("AdmId")
+                        .HasForeignKey("AdminId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 

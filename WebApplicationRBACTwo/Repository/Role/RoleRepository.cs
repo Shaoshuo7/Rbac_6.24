@@ -9,8 +9,6 @@ namespace Repository
 {
     public class RoleRepository : BaseRepository<Role, int>, IRoleRepository
     {
-        private readonly MyDbContext myDbContext;
-
         public RoleRepository(MyDbContext myDbContext)
         {
             this.db = myDbContext;

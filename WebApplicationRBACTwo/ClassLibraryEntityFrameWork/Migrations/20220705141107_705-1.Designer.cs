@@ -10,8 +10,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace ClassLibraryEntityFrameWork.Migrations
 {
     [DbContext(typeof(MyDbContext))]
-    [Migration("20220628083330_Init628")]
-    partial class Init628
+    [Migration("20220705141107_705-1")]
+    partial class _7051
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -23,7 +23,7 @@ namespace ClassLibraryEntityFrameWork.Migrations
 
             modelBuilder.Entity("ClassLibraryEntityFrameWork.Admin", b =>
                 {
-                    b.Property<int>("AdmId")
+                    b.Property<int>("AdminId")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int")
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
@@ -55,7 +55,7 @@ namespace ClassLibraryEntityFrameWork.Migrations
                     b.Property<string>("LastLoginIP")
                         .HasColumnType("nvarchar(max)");
 
-                    b.HasKey("AdmId");
+                    b.HasKey("AdminId");
 
                     b.ToTable("Admin");
                 });
@@ -67,7 +67,7 @@ namespace ClassLibraryEntityFrameWork.Migrations
                         .HasColumnType("int")
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
-                    b.Property<int>("AdmId")
+                    b.Property<int>("AdminId")
                         .HasColumnType("int");
 
                     b.Property<int>("RoleId")
@@ -75,7 +75,7 @@ namespace ClassLibraryEntityFrameWork.Migrations
 
                     b.HasKey("AdminAndRoleId");
 
-                    b.HasIndex("AdmId");
+                    b.HasIndex("AdminId");
 
                     b.HasIndex("RoleId");
 
@@ -164,40 +164,37 @@ namespace ClassLibraryEntityFrameWork.Migrations
 
             modelBuilder.Entity("ClassLibraryEntityFrameWork.AdminAndRole", b =>
                 {
-                    b.HasOne("ClassLibraryEntityFrameWork.Admin", "Admin")
-                        .WithMany()
-                        .HasForeignKey("AdmId")
+                    b.HasOne("ClassLibraryEntityFrameWork.Admin", null)
+                        .WithMany("AdminAndRole")
+                        .HasForeignKey("AdminId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("ClassLibraryEntityFrameWork.Role", "Role")
+                    b.HasOne("ClassLibraryEntityFrameWork.Role", null)
                         .WithMany()
                         .HasForeignKey("RoleId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
-
-                    b.Navigation("Admin");
-
-                    b.Navigation("Role");
                 });
 
             modelBuilder.Entity("ClassLibraryEntityFrameWork.RoleAndMeun", b =>
                 {
-                    b.HasOne("ClassLibraryEntityFrameWork.Meun", "Meun")
+                    b.HasOne("ClassLibraryEntityFrameWork.Meun", null)
                         .WithMany()
                         .HasForeignKey("MeunId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("ClassLibraryEntityFrameWork.Role", "Role")
+                    b.HasOne("ClassLibraryEntityFrameWork.Role", null)
                         .WithMany()
                         .HasForeignKey("RoleId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
+                });
 
-                    b.Navigation("Meun");
-
-                    b.Navigation("Role");
+            modelBuilder.Entity("ClassLibraryEntityFrameWork.Admin", b =>
+                {
+                    b.Navigation("AdminAndRole");
                 });
 #pragma warning restore 612, 618
         }

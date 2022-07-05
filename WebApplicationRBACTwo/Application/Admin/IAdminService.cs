@@ -14,5 +14,6 @@ namespace Application
 
         TokenDto AdmLogin(LoginDto c);
         ResultPage<AdminDto> Paginations(Pager dto);
+        ResultDto Permis(AdminDto c);
     }
 }

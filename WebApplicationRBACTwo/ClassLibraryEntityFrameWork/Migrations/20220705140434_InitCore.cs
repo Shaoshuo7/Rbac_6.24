@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace ClassLibraryEntityFrameWork.Migrations
 {
-    public partial class Init : Migration
+    public partial class InitCore : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -11,7 +11,7 @@ namespace ClassLibraryEntityFrameWork.Migrations
                 name: "Admin",
                 columns: table => new
                 {
-                    AdmId = table.Column<int>(type: "int", nullable: false)
+                    AdminId = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
                     AdmName = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     AdmPassWord = table.Column<string>(type: "nvarchar(max)", nullable: true),
@@ -25,7 +25,7 @@ namespace ClassLibraryEntityFrameWork.Migrations
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_Admin", x => x.AdmId);
+                    table.PrimaryKey("PK_Admin", x => x.AdminId);
                 });
 
             migrationBuilder.CreateTable(
@@ -37,6 +37,7 @@ namespace ClassLibraryEntityFrameWork.Migrations
                     MeunName = table.Column<string>(type: "nvarchar(50)", maxLength: 50, nullable: true),
                     MeId = table.Column<int>(type: "int", nullable: false),
                     MeunLink = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    IsDefault = table.Column<bool>(type: "bit", nullable: false),
                     CreateTime = table.Column<DateTime>(type: "datetime2", nullable: false),
                     CreateId = table.Column<int>(type: "int", nullable: false),
                     IsDelete = table.Column<bool>(type: "bit", nullable: false)
@@ -68,17 +69,17 @@ namespace ClassLibraryEntityFrameWork.Migrations
                 {
                     AdminAndRoleId = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
-                    AdmId = table.Column<int>(type: "int", nullable: false),
+                    AdminId = table.Column<int>(type: "int", nullable: false),
                     RoleId = table.Column<int>(type: "int", nullable: false)
                 },
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_AdminAndRole", x => x.AdminAndRoleId);
                     table.ForeignKey(
-                        name: "FK_AdminAndRole_Admin_AdmId",
-                        column: x => x.AdmId,
+                        name: "FK_AdminAndRole_Admin_AdminId",
+                        column: x => x.AdminId,
                         principalTable: "Admin",
-                        principalColumn: "AdmId",
+                        principalColumn: "AdminId",
                         onDelete: ReferentialAction.Cascade);
                     table.ForeignKey(
                         name: "FK_AdminAndRole_Role_RoleId",
@@ -115,9 +116,9 @@ namespace ClassLibraryEntityFrameWork.Migrations
                 });
 
             migrationBuilder.CreateIndex(
-                name: "IX_AdminAndRole_AdmId",
+                name: "IX_AdminAndRole_AdminId",
                 table: "AdminAndRole",
-                column: "AdmId");
+                column: "AdminId");
 
             migrationBuilder.CreateIndex(
                 name: "IX_AdminAndRole_RoleId",

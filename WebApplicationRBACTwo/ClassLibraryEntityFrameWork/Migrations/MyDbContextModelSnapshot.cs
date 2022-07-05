@@ -21,7 +21,7 @@ namespace ClassLibraryEntityFrameWork.Migrations
 
             modelBuilder.Entity("ClassLibraryEntityFrameWork.Admin", b =>
                 {
-                    b.Property<int>("AdmId")
+                    b.Property<int>("AdminId")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int")
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
@@ -53,7 +53,7 @@ namespace ClassLibraryEntityFrameWork.Migrations
                     b.Property<string>("LastLoginIP")
                         .HasColumnType("nvarchar(max)");
 
-                    b.HasKey("AdmId");
+                    b.HasKey("AdminId");
 
                     b.ToTable("Admin");
                 });
@@ -65,7 +65,7 @@ namespace ClassLibraryEntityFrameWork.Migrations
                         .HasColumnType("int")
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
-                    b.Property<int>("AdmId")
+                    b.Property<int>("AdminId")
                         .HasColumnType("int");
 
                     b.Property<int>("RoleId")
@@ -73,7 +73,7 @@ namespace ClassLibraryEntityFrameWork.Migrations
 
                     b.HasKey("AdminAndRoleId");
 
-                    b.HasIndex("AdmId");
+                    b.HasIndex("AdminId");
 
                     b.HasIndex("RoleId");
 
@@ -163,8 +163,8 @@ namespace ClassLibraryEntityFrameWork.Migrations
             modelBuilder.Entity("ClassLibraryEntityFrameWork.AdminAndRole", b =>
                 {
                     b.HasOne("ClassLibraryEntityFrameWork.Admin", null)
-                        .WithMany()
-                        .HasForeignKey("AdmId")
+                        .WithMany("AdminAndRole")
+                        .HasForeignKey("AdminId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
@@ -188,6 +188,11 @@ namespace ClassLibraryEntityFrameWork.Migrations
                         .HasForeignKey("RoleId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
+                });
+
+            modelBuilder.Entity("ClassLibraryEntityFrameWork.Admin", b =>
+                {
+                    b.Navigation("AdminAndRole");
                 });
 #pragma warning restore 612, 618
         }

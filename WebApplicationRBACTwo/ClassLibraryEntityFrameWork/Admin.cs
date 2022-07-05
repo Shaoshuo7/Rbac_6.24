@@ -1,6 +1,7 @@
 ﻿using System;
 using System.ComponentModel.DataAnnotations.Schema;
 using System.ComponentModel.DataAnnotations;
+using System.Collections.Generic;
 
 namespace ClassLibraryEntityFrameWork
 {
@@ -11,7 +12,7 @@ namespace ClassLibraryEntityFrameWork
     public class Admin : BaseClass
     {
         [Key]
-        public int AdmId { get; set; }
+        public int AdminId { get; set; }
         /// <summary>
         /// 账号
         /// </summary>
@@ -28,5 +29,6 @@ namespace ClassLibraryEntityFrameWork
         public DateTime LastDateTime { get; set; }
         public string LastLoginIP { get; set; }
         public bool IsLock { get; set; }
+        public List<AdminAndRole> AdminAndRole { get; set; }
     }
 }
