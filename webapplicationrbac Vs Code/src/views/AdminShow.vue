@@ -15,7 +15,7 @@
             </el-table-column>
             <el-table-column
                 prop="CreateTime"
-                label="创建时间">
+                label="创建_时间">
                 <template slot-scope="scope">
                     {{scope.row.CreateTime.substr(0,10)}}
                 </template>
