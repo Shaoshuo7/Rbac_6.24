@@ -31,6 +31,7 @@ namespace ClassLibraryDto
         /// </summary>
         public DateTime CreateTime { get; set; }
         public int[] RoleId { get; set; }
-        public List<AdminAndRole> AdminAndRole { get; set; }
+        //public List<AdminAndRoleDto> AdminAndRole { get; set; }
+        //public List<AdminAndRole> AdminAndRole { get; set; }
     }
 }

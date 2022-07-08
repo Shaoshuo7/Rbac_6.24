@@ -29,6 +29,6 @@ namespace ClassLibraryEntityFrameWork
         public DateTime LastDateTime { get; set; }
         public string LastLoginIP { get; set; }
         public bool IsLock { get; set; }
-        public List<AdminAndRole> AdminAndRole { get; set; }
+        //public List<AdminAndRole> AdminAndRole { get; set; }
     }
 }

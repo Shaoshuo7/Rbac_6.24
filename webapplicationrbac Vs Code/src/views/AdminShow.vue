@@ -1,5 +1,7 @@
 <template>
     <div>
+        <el-button type="primary" round @click="OnAdd">添加</el-button>
+
         <el-table
             :data="tableData"
             style="width: 100%">
@@ -15,7 +17,7 @@
             </el-table-column>
             <el-table-column
                 prop="CreateTime"
-                label="创建_时间">
+                label="创建时间">
                 <template slot-scope="scope">
                     {{scope.row.CreateTime.substr(0,10)}}
                 </template>
@@ -23,7 +25,7 @@
             <el-table-column
                 label="操作">
                 <template slot-scope="scope">
-                  <el-button type="danger" round @click="OnDel(scope.row.AdmId)">删除</el-button>
+                  <el-button type="danger" round @click="OnDel(scope.row.AdminId)">删除</el-button>
                 </template>
             </el-table-column>
         </el-table>
@@ -38,13 +40,26 @@
             :total="from.TotalCount"
             background>
         </el-pagination>
+
+        <el-dialog
+          title="添加管理员"
+          :visible.sync="dialogVisible"
+          width="30%">
+            <admin-and-role @AddAdmin="AddAdmin" :key="new Date().getTime()"/>
+        </el-dialog>
     </div>
 </template>
 
   <script>
+import AdminAndRole from '@/views/AdminAndRole.vue'
+
     export default {
+      components: {
+        AdminAndRole
+      },
       data() {
         return {
+          dialogVisible:false,
           tableData: [],
           from:{
             Page:1,
@@ -93,6 +108,14 @@
                     message: '已取消删除'
                 });          
             });
+        },
+        OnAdd(){
+          this.dialogVisible = true
+        },
+        AddAdmin(val){
+          this.dialogVisible = !val;
+
+          this.Load()
         }
       },
       created(){

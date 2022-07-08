@@ -21,13 +21,15 @@ namespace Application
         private readonly IAdminRepository adminRepository;
         private readonly IMapper mapper;
         private readonly IConfiguration configuration;
+        private readonly IAdminAndRoleRepository adminAndRoleRepository;
 
-        public AdminService(IAdminRepository adminRepository, IMapper mapper, IConfiguration configuration)
+        public AdminService(IAdminRepository adminRepository, IMapper mapper, IConfiguration configuration, IAdminAndRoleRepository adminAndRoleRepository)
             : base(adminRepository, mapper)
         {
             this.adminRepository = adminRepository;
             this.mapper = mapper;
             this.configuration = configuration;
+            this.adminAndRoleRepository = adminAndRoleRepository;
         }
 
         /// <summary>
@@ -144,6 +146,10 @@ namespace Application
             var Entity = mapper.Map<Admin>(c);
 
             adminRepository.Add(Entity);
+
+            var list = c.RoleId.Select(t => new AdminAndRole { RoleId = t, AdminId = Entity.AdminId }).ToList();
+
+            adminAndRoleRepository.Add(list);
 
             return new ResultDto { Code = 0, Msg = "注册成功" };
         }

@@ -9,5 +9,6 @@ namespace Application
         TDto FanT(int id);
         List<TDto> GetShow();
         int Upd(TDto c);
+        List<TDto> GetList();
     }
 }

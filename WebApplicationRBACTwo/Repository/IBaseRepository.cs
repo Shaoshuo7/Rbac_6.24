@@ -21,5 +21,7 @@ namespace Repository
         IQueryable<T> GetQuery(Expression<Func<T, bool>> predicate = null);
 
         int DelAlls(Expression<Func<T, bool>> predicate);
+        List<T> GetList(Expression<Func<T, bool>> predicate);
+        int Add(List<T> c);
     }
 }

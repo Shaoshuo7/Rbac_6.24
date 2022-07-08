@@ -19,6 +19,8 @@ namespace Application
             CreateMap<MeunListDto, Meun>().ReverseMap();
             CreateMap<RoleAndMeun, AssignmentDto>().ReverseMap();
             CreateMap<MeunRoleDto, RoleAndMeun>().ReverseMap();
+            CreateMap<AdminAndRoleDto, AdminDto>().ReverseMap();
+            CreateMap<AdminAndRoleDto, AdminAndRole>().ReverseMap();
         }
     }
 }

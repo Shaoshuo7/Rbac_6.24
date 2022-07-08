@@ -100,6 +100,17 @@ namespace Repository
 
             return query;
         }
+
+        public virtual List<T> GetList(Expression<Func<T,bool>> predicate)
+        {
+            return db.Set<T>().Where(predicate).ToList();
+        }
+
+        public virtual int Add(List<T> c)
+        { 
+            db.Set<T>().AddRange(c);
+            return db.SaveChanges();
+        }
     }
 }
 

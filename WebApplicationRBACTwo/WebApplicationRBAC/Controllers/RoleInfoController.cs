@@ -72,5 +72,11 @@ namespace WebApplicationRBAC.Controllers
         { 
             return role.DelRoleMeun(id);
         }
+
+        [HttpGet]
+        public IActionResult GetList()
+        { 
+            return new JsonResult(role.GetList());
+        }
     }
 }

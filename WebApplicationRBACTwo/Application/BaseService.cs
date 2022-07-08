@@ -45,5 +45,10 @@ namespace Application
         {
             return baseRepository.Upd(mapper.Map<T>(c));
         }
+
+        public virtual List<TDto> GetList()
+        {
+            return mapper.Map<List<TDto>>(baseRepository.MeunAll());
+        }
     }
 }
